@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\NewspaaperCoreGrapgQL",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Business",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Business\\GraphModels",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Business\\GraphModels\\Mutations",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Business\\GraphModels\\Queries",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Business\\GraphModels\\Schema",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Business\\GraphModels\\Utilities",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.GraphWebAPI",
+    "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.GraphWebAPI\\Controllers"
+  ],
+  "SelectedNode": "\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.GraphWebAPI\\Controllers\\GraphQLController.cs",
+  "PreviewInSolutionExplorer": false
+}

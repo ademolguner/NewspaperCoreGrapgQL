@@ -11,3 +11,16 @@ D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.
 D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.csproj.CopyComplete
 D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.dll
 D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.pdb
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.deps.json
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.dll
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.pdb
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.dll
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Entities.dll
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.pdb
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Entities.pdb
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.csprojAssemblyReference.cache
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.AssemblyInfoInputs.cache
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.AssemblyInfo.cs
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.csproj.CopyComplete
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.dll
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.DataAccess\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.pdb

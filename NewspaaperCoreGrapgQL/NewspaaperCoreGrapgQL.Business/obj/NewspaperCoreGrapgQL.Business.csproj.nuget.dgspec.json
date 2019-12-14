@@ -32,9 +32,6 @@
             "projectReferences": {
               "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.DataAccess\\NewspaperCoreGrapgQL.DataAccess.csproj": {
                 "projectPath": "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.DataAccess\\NewspaperCoreGrapgQL.DataAccess.csproj"
-              },
-              "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Entities\\NewspaperCoreGrapgQL.Entities.csproj": {
-                "projectPath": "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Entities\\NewspaperCoreGrapgQL.Entities.csproj"
               }
             }
           }
@@ -165,9 +162,6 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Core\\NewspaperCoreGrapgQL.Core.csproj": {
-                "projectPath": "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Core\\NewspaperCoreGrapgQL.Core.csproj"
-              },
               "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Entities\\NewspaperCoreGrapgQL.Entities.csproj": {
                 "projectPath": "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Entities\\NewspaperCoreGrapgQL.Entities.csproj"
               }

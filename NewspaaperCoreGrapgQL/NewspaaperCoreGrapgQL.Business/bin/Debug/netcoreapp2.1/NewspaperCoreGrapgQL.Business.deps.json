@@ -10,7 +10,6 @@
         "dependencies": {
           "GraphQL": "2.4.0",
           "NewspaperCoreGrapgQL.DataAccess": "1.0.0",
-          "NewspaperCoreGrapgQL.Entities": "1.0.0",
           "Ninject": "3.3.4"
         },
         "runtime": {
@@ -787,7 +786,6 @@
       "NewspaperCoreGrapgQL.DataAccess/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
-          "NewspaperCoreGrapgQL.Core": "1.0.0",
           "NewspaperCoreGrapgQL.Entities": "1.0.0"
         },
         "runtime": {

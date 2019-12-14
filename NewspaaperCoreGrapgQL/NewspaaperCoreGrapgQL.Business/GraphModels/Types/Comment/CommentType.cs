@@ -5,8 +5,6 @@ using System.Text;
 
 namespace NewspaaperCoreGrapgQL.Business.GraphModels.Types.Comment
 {
-
-
     public class CommentType : ObjectGraphType<Entities.Models.Comment>
     {
         public CommentType()

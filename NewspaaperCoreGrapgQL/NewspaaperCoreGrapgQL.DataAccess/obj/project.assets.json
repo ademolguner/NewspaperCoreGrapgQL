@@ -3519,7 +3519,6 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "NewspaperCoreGrapgQL.Core >= 1.0.0",
       "NewspaperCoreGrapgQL.Entities >= 1.0.0"
     ]
   },
@@ -3553,9 +3552,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Core\\NewspaperCoreGrapgQL.Core.csproj": {
-              "projectPath": "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Core\\NewspaperCoreGrapgQL.Core.csproj"
-            },
             "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Entities\\NewspaperCoreGrapgQL.Entities.csproj": {
               "projectPath": "D:\\PROJELERIM\\SOURCECONTROL\\GIT\\GraphQLNewspaper\\NewspaaperCoreGrapgQL\\NewspaaperCoreGrapgQL.Entities\\NewspaperCoreGrapgQL.Entities.csproj"
             }

@@ -7,32 +7,22 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Mutations
 {
     public class PostMutation : ObjectGraphType
     {
-        //public PostMutation(IPostRepository postRepository)
-        //{
-        //    Field<PostType>(
-        //        "addPost",
-        //        arguments: new QueryArguments(new QueryArgument<NonNullGraphType<PostInputType>>
-        //        { Name = "post" }),
-        //        resolve: context =>
-        //        {
-        //            var post = context.GetArgument<Post>("post");
-        //            return postRepository.Add(post);
-        //        }
-        //        );
-        //}
-
         public PostMutation(IPostService postRepository)
         {
             Field<PostType>(
                 "addPost",
-                arguments: new QueryArguments(new QueryArgument<NonNullGraphType<PostInputType>>
-                { Name = "post" }),
+                arguments: new QueryArguments(
+                     new QueryArgument<NonNullGraphType<PostInputType>>
+                     {
+                         Name = "post",
+                         Description = "Acıklama yazılabilir"
+                     }),
                 resolve: context =>
-                {
-                    var post = context.GetArgument<Post>("post");
-                    return postRepository.Add(post);
-                }
-                );
+                                    {
+                                        var post = context.GetArgument<Post>("post");
+                                        return postRepository.Add(post);
+                                    }
+                          );
         }
     }
 }
