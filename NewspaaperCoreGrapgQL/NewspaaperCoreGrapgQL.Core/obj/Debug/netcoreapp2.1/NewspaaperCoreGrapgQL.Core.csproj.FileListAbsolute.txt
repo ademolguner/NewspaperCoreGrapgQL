@@ -1,0 +1,8 @@
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\bin\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.deps.json
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\bin\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.AssemblyInfoInputs.cache
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.AssemblyInfo.cs
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\bin\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Core.csprojAssemblyReference.cache

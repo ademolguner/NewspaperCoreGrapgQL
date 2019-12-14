@@ -1,0 +1,7 @@
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\bin\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.deps.json
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\bin\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\bin\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.AssemblyInfoInputs.cache
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.AssemblyInfo.cs
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Entities\obj\Debug\netcoreapp2.1\NewspaaperCoreGrapgQL.Entities.pdb

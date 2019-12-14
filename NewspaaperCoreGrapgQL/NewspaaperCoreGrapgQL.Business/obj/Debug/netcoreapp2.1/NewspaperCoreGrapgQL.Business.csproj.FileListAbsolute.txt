@@ -1,0 +1,15 @@
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.deps.json
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Entities.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.DataAccess.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Entities.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\bin\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.pdb
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.csprojAssemblyReference.cache
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.AssemblyInfoInputs.cache
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.AssemblyInfo.cs
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.csproj.CopyComplete
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.dll
+D:\PROJELERIM\SOURCECONTROL\GraphQL\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Business\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Business.pdb

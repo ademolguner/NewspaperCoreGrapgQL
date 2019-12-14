@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Concrete\NewspaperContextFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewspaaperCoreGrapgQL.Core\NewspaperCoreGrapgQL.Core.csproj" />
+    <ProjectReference Include="..\NewspaaperCoreGrapgQL.Entities\NewspaperCoreGrapgQL.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
