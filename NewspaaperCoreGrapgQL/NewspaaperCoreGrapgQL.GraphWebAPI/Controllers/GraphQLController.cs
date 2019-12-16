@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using GraphQL;
+using GraphQL.Conversion;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Mvc;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Utilities;
@@ -26,13 +27,14 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI.Controllers
             }
             var inputs = query.Variables?.ToInputs();
             var executionOptions = new ExecutionOptions
-            {
-                Inputs = inputs,
+            { 
+                Schema = _schema,
                 Query = query.Query,
-                Schema = _schema
+                Inputs = query.Variables?.ToInputs(),//TODO: Jsondaki variable kısmının tanımlanması için
+                FieldNameConverter = new PascalCaseFieldNameConverter() //TODO: Graphql sorgularının pascal case olarak yazılması için gerekli.
             };
 
-            var result = await _documentExecuter.ExecuteAsync(executionOptions);
+            var result = await _documentExecuter.ExecuteAsync(executionOptions).ConfigureAwait(false);
             if (result.Errors?.Count > 0)
             {
                 return BadRequest();

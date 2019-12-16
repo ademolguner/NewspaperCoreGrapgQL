@@ -5,7 +5,7 @@ using NewspaaperCoreGrapgQL.Entities.Models;
 
 namespace NewspaaperCoreGrapgQL.Business.GraphModels.Mutations
 {
-    public class PostMutation : ObjectGraphType
+    public   class PostMutation : ObjectGraphType<object>
     {
         public PostMutation(IPostService postRepository)
         {

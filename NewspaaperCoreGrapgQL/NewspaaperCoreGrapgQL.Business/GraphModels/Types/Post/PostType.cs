@@ -19,7 +19,7 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Types.Post
             Field(x => x.CreatedDate);
             Field(x => x.IsActive);
             Field(x => x.CategoryId);
-
+            //Field<CategoryType>("Category", resolve: context => context.Category);
             Field<ListGraphType<CommentType>>(
                 "comments",
                 arguments: new QueryArguments(new QueryArgument<IntGraphType> { Name = "last" }),

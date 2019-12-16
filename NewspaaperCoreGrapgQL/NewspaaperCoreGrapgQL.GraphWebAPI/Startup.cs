@@ -25,6 +25,8 @@ using NewspaaperCoreGrapgQL.Business.GraphModels.Types.Post;
 using NewspaaperCoreGrapgQL.DataAccess.Abstract;
 using NewspaaperCoreGrapgQL.DataAccess.Concrete;
 using NewspaaperCoreGrapgQL.DataAccess.Concrete.EntityFramework;
+using NewspaperCoreGrapgQL.Business.GraphModels.Newspaper;
+using NewspaperCoreGrapgQL.Business.GraphModels.Types.Category;
 using NewspaperCoreGrapgQL.Business.GraphModels.Types.PostTag;
 using NewspaperCoreGrapgQL.Business.GraphModels.Types.Tag;
 
@@ -63,22 +65,27 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
             services.AddDbContext<NewspaperContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:NewspaperDb"]));
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
 
-
+            services.AddSingleton<NewspaperQuery>();
+            services.AddSingleton<NewspaperMutation>();
             services.AddSingleton<PostQuery>();
-            services.AddSingleton<PostMutation>();
+            //services.AddSingleton<PostMutation>();
             services.AddSingleton<CategoryQuery>();
-
+            //services.AddSingleton<CategoryMutation>();
 
             services.AddSingleton<PostType>();
             services.AddSingleton<PostInputType>();
+            services.AddSingleton<CategoryInputType>();
             services.AddSingleton<CommentType>();
             services.AddSingleton<CategoryType>();
             services.AddSingleton<PostTagType>();
             services.AddSingleton<TagType>();
 
 
-            var sp = services.BuildServiceProvider();
-            services.AddSingleton<ISchema>(new NewspaperGraphQLSchema(new FuncDependencyResolver(type => sp.GetService(type))));
+            //var sp = services.BuildServiceProvider();
+            //services.AddSingleton<ISchema>(new NewspaperGraphQLSchema(new FuncDependencyResolver(type => sp.GetService(type))));
+            services.AddSingleton<IDependencyResolver>(_ => new FuncDependencyResolver(_.GetRequiredService));
+            services.AddSingleton<ISchema, NewspaperGraphQLSchema>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

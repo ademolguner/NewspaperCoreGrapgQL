@@ -1,6 +1,7 @@
 ﻿using GraphQL;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Mutations;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Queries;
+using NewspaperCoreGrapgQL.Business.GraphModels.Newspaper;
 
 namespace NewspaaperCoreGrapgQL.Business.GraphModels.Schema
 {
@@ -9,8 +10,12 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Schema
         public NewspaperGraphQLSchema(IDependencyResolver resolver)
             : base(resolver)
         {
-            Query = resolver.Resolve<PostQuery>(); 
-            Mutation = resolver.Resolve<PostMutation>();
+            //Query = resolver.Resolve<PostQuery>(); 
+            Query = resolver.Resolve<NewspaperQuery>();
+            //Mutation = resolver.Resolve<PostMutation>();
+            Mutation = resolver.Resolve<NewspaperMutation>();
+
+            
         }
 
 
