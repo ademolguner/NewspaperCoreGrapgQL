@@ -39,5 +39,10 @@ namespace NewspaaperCoreGrapgQL.Business.Concrete.Manager
             _tagDal.Update(tag);
             return tag;
         }
+
+        public List<Tag> PostTagListForPost(int postID)
+        {
+            return _tagDal.GetPostTags(postID);
+        }
     }
 }

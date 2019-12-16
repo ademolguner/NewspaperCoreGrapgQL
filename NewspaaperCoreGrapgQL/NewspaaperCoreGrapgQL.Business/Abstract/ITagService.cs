@@ -14,5 +14,6 @@ namespace NewspaaperCoreGrapgQL.Business.Abstract
         Tag Update(Tag tag);
 
         void Delete(Tag tag);
+        List<Tag> PostTagListForPost(int postID);
     }
 }

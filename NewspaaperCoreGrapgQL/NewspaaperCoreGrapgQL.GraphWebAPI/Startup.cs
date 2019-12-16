@@ -25,6 +25,8 @@ using NewspaaperCoreGrapgQL.Business.GraphModels.Types.Post;
 using NewspaaperCoreGrapgQL.DataAccess.Abstract;
 using NewspaaperCoreGrapgQL.DataAccess.Concrete;
 using NewspaaperCoreGrapgQL.DataAccess.Concrete.EntityFramework;
+using NewspaperCoreGrapgQL.Business.GraphModels.Types.PostTag;
+using NewspaperCoreGrapgQL.Business.GraphModels.Types.Tag;
 
 namespace NewspaaperCoreGrapgQL.GraphWebAPI
 {
@@ -71,6 +73,8 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
             services.AddSingleton<PostInputType>();
             services.AddSingleton<CommentType>();
             services.AddSingleton<CategoryType>();
+            services.AddSingleton<PostTagType>();
+            services.AddSingleton<TagType>();
 
 
             var sp = services.BuildServiceProvider();
