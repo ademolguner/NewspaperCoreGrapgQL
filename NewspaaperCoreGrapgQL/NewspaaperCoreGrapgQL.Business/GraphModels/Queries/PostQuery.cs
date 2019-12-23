@@ -1,4 +1,5 @@
-﻿using GraphQL.Types;
+﻿using System.Linq;
+using GraphQL.Types;
 using NewspaaperCoreGrapgQL.Business.Abstract;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Types.Post;
 
@@ -9,7 +10,7 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Queries
         public PostQuery(IPostService postRepository)
         {
             Field<ListGraphType<PostType>>(
-                "posts",
+                "PostList",
                 resolve: context => postRepository.GetAll());
 
             Field<PostType>(

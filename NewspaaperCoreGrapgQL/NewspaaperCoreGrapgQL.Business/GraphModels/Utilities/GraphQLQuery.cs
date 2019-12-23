@@ -13,3 +13,5 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Utilities
         public JObject Variables { get; set; }
     }
 }
+
+

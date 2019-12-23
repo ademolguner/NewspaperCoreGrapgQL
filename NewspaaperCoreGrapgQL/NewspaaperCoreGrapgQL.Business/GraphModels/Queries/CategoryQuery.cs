@@ -12,6 +12,12 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Queries
             Field<ListGraphType<CategoryType>>(
                 "categories",
                 resolve: context => categoryRepository.GetAll());
+             
+            Field<CategoryType>(
+                "category",
+                arguments: new QueryArguments(new QueryArgument<IntGraphType> { Name = "id" }),
+                resolve: context => categoryRepository.GetById(context.GetArgument<int>("id"))
+                );
         }
     }
 }

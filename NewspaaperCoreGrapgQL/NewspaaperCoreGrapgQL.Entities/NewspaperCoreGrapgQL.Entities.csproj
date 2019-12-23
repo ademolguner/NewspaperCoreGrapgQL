@@ -8,8 +8,4 @@
     <ProjectReference Include="..\NewspaaperCoreGrapgQL.Core\NewspaperCoreGrapgQL.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ComplexTypes\" />
-  </ItemGroup>
-
 </Project>

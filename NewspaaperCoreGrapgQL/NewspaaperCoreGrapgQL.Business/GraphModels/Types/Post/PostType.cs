@@ -2,6 +2,7 @@
 using NewspaaperCoreGrapgQL.Business.Abstract;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Types.Category;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Types.Comment;
+using NewspaperCoreGrapgQL.Business.GraphModels.Types.Post;
 using NewspaperCoreGrapgQL.Business.GraphModels.Types.Tag;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,12 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Types.Post
         public PostType(ICommentService commentRepository, ICategoryService categoryRepository, ITagService tagService)
         {
             Field(x => x.PostId);
-            Field(x => x.Title);
-            Field(x => x.Content);
-            Field(x => x.CreatedDate);
-            Field(x => x.IsActive);
+            Field(x => x.Title,nullable:false).Description("Başlık");
+            Field(x => x.Content).Description("İçerik");
+            Field(x => x.CreatedDate, nullable:true).DefaultValue(DateTime.Now).Description("Oluşturulma zamanı");
+            Field(x => x.IsActive, nullable: true).DefaultValue(true);
             Field(x => x.CategoryId);
-            //Field<CategoryType>("Category", resolve: context => context.Category);
+
             Field<ListGraphType<CommentType>>(
                 "comments",
                 arguments: new QueryArguments(new QueryArgument<IntGraphType> { Name = "last" }),
@@ -31,18 +32,19 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Types.Post
                     : commentRepository.GetCommentsByPostId(context.Source.PostId);
                 });
 
-            Field<CategoryType>("categoriy",
+            Field<CategoryType>("category",
                 resolve: context =>
                 {
                     return categoryRepository.GetById(context.Source.CategoryId);
                 });
+
             Field<IntGraphType>("commentCount",
                 resolve: context =>
                 {
                     return commentRepository.GetCommentsByPostId(context.Source.PostId).Count;
                 });
 
-            Field<ListGraphType<TagType>>("posttags",
+            Field<ListGraphType<PostTagDtoType>>("posttags",
             resolve: context =>
             {
                 return tagService.PostTagListForPost(context.Source.PostId);

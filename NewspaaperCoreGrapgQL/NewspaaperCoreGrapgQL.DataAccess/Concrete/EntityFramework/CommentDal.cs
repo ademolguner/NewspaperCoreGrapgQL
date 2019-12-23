@@ -5,7 +5,7 @@ using NewspaaperCoreGrapgQL.Entities.Models;
 
 namespace NewspaaperCoreGrapgQL.DataAccess.Concrete.EntityFramework
 {
-    public class EfCommentDal : EfEntityRepositoryBase<Comment, NewspaperContext>, ICommentDal
+    public class CommentDal : EntityRepositoryBase<Comment, NewspaperContext>, ICommentDal
     {
     }
 }

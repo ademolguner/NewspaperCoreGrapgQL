@@ -12,3 +12,4 @@ D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\Newspaape
 D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.AssemblyInfo.cs
 D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.dll
 D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.pdb
+D:\PROJELERIM\SOURCECONTROL\GIT\GraphQLNewspaper\NewspaaperCoreGrapgQL\NewspaaperCoreGrapgQL.Core\obj\Debug\netcoreapp2.1\NewspaperCoreGrapgQL.Core.csprojAssemblyReference.cache

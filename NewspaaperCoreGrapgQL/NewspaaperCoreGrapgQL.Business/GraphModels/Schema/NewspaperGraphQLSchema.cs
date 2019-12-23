@@ -7,17 +7,10 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Schema
 {
     public class NewspaperGraphQLSchema : GraphQL.Types.Schema
     {
-        public NewspaperGraphQLSchema(IDependencyResolver resolver)
-            : base(resolver)
+        public NewspaperGraphQLSchema(IDependencyResolver resolver): base(resolver)
         {
-            //Query = resolver.Resolve<PostQuery>(); 
             Query = resolver.Resolve<NewspaperQuery>();
-            //Mutation = resolver.Resolve<PostMutation>();
             Mutation = resolver.Resolve<NewspaperMutation>();
-
-            
         }
-
-
     }
 }

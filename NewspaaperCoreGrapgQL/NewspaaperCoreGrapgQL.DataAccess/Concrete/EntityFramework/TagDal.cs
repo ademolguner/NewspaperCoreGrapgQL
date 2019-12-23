@@ -2,14 +2,15 @@
 using NewspaaperCoreGrapgQL.DataAccess.Abstract;
 using NewspaaperCoreGrapgQL.DataAccess.Concrete;
 using NewspaaperCoreGrapgQL.Entities.Models;
+using NewspaperCoreGrapgQL.Entities.ComplexTypes;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace NewspaaperCoreGrapgQL.DataAccess.Concrete.EntityFramework
 {
-    public class EfTagDal : EfEntityRepositoryBase<Tag, NewspaperContext>, ITagDal
+    public class TagDal : EntityRepositoryBase<Tag, NewspaperContext>, ITagDal
     {
-        public List<Tag> GetPostTags(int postId)
+        public List<PostTagDto> GetPostTags(int postId)
         {
             using (NewspaperContext context = new NewspaperContext())
             {
@@ -19,7 +20,7 @@ namespace NewspaaperCoreGrapgQL.DataAccess.Concrete.EntityFramework
                                   join t in context.Tag
                                   on pt.TagId equals t.TagId
                                   where p.PostId == postId
-                                  select new Tag { TagId = t.TagId, TagName = t.TagName };
+                                  select new PostTagDto { TagValueName = t.TagName};
                 return tagNameList.ToList();
             }
         }

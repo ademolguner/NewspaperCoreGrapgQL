@@ -8,7 +8,7 @@ using System.Text;
 
 namespace NewspaaperCoreGrapgQL.Core.DataAccess.EntityFramework
 {
-    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
+    public class EntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
          where TEntity : class , IEntity, new()
          where TContext : DbContext, new()
     {

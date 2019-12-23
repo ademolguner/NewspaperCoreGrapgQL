@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using GraphiQl;
+﻿using GraphiQl;
 using GraphQL;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using NewspaaperCoreGrapgQL.Business.Abstract;
 using NewspaaperCoreGrapgQL.Business.Concrete.Manager;
-using NewspaaperCoreGrapgQL.Business.GraphModels.Mutations;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Queries;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Schema;
 using NewspaaperCoreGrapgQL.Business.GraphModels.Types.Category;
@@ -27,6 +19,7 @@ using NewspaaperCoreGrapgQL.DataAccess.Concrete;
 using NewspaaperCoreGrapgQL.DataAccess.Concrete.EntityFramework;
 using NewspaperCoreGrapgQL.Business.GraphModels.Newspaper;
 using NewspaperCoreGrapgQL.Business.GraphModels.Types.Category;
+using NewspaperCoreGrapgQL.Business.GraphModels.Types.Post;
 using NewspaperCoreGrapgQL.Business.GraphModels.Types.PostTag;
 using NewspaperCoreGrapgQL.Business.GraphModels.Types.Tag;
 
@@ -45,32 +38,25 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            //ninject ile
+            
             services.AddTransient<IPostService, PostManager>();
-            services.AddTransient<IPostDal, EfPostDal>();
-
+            services.AddTransient<IPostDal, PostDal>();
             services.AddTransient<ICategoryService, CategoryManager>();
-            services.AddTransient<ICategoryDal, EfCategoryDal>();
-
+            services.AddTransient<ICategoryDal, CategoryDal>();
             services.AddTransient<ITagService, TagManager>();
-            services.AddTransient<ITagDal, EfTagDal>();
-
+            services.AddTransient<ITagDal, TagDal>();
             services.AddTransient<ICommentService, CommentManager>();
-            services.AddTransient<ICommentDal, EfCommentDal>();
-
+            services.AddTransient<ICommentDal, CommentDal>();
             services.AddTransient<IPostTagService, PostTagManager>();
-            services.AddTransient<IPostTagDal, EfPostTagDal>();
-
-
+            services.AddTransient<IPostTagDal, PostTagDal>();
             services.AddDbContext<NewspaperContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:NewspaperDb"]));
+            
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
 
             services.AddSingleton<NewspaperQuery>();
             services.AddSingleton<NewspaperMutation>();
             services.AddSingleton<PostQuery>();
-            //services.AddSingleton<PostMutation>();
             services.AddSingleton<CategoryQuery>();
-            //services.AddSingleton<CategoryMutation>();
 
             services.AddSingleton<PostType>();
             services.AddSingleton<PostInputType>();
@@ -79,12 +65,11 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
             services.AddSingleton<CategoryType>();
             services.AddSingleton<PostTagType>();
             services.AddSingleton<TagType>();
+            services.AddSingleton<PostTagDtoType>();
 
-
-            //var sp = services.BuildServiceProvider();
-            //services.AddSingleton<ISchema>(new NewspaperGraphQLSchema(new FuncDependencyResolver(type => sp.GetService(type))));
             services.AddSingleton<IDependencyResolver>(_ => new FuncDependencyResolver(_.GetRequiredService));
             services.AddSingleton<ISchema, NewspaperGraphQLSchema>();
+             
 
         }
 
@@ -102,6 +87,7 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
             app.UseGraphiQl();
             app.UseHttpsRedirection();
             app.UseMvc();
+           
         }
     }
 }

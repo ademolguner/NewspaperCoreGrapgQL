@@ -10,11 +10,11 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Types.Category
 
     public class CategoryType : ObjectGraphType<Entities.Models.Category>
     {
-        public CategoryType(IPostService postService )
+        public CategoryType(IPostService postService)
         {
             Name = "Category";
-            Field(x => x.CategoryId);
-            Field(x => x.CategoryName);
+            Field(x => x.CategoryId).Description("Category id."); ;
+            Field(x => x.CategoryName, nullable: false).Description("Category Name."); ;
 
             Field<ListGraphType<PostType>>("postlist",
             resolve: context =>

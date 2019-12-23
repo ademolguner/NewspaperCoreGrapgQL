@@ -1,6 +1,7 @@
 ﻿using NewspaaperCoreGrapgQL.Business.Abstract;
 using NewspaaperCoreGrapgQL.DataAccess.Abstract;
 using NewspaaperCoreGrapgQL.Entities.Models;
+using NewspaperCoreGrapgQL.Entities.ComplexTypes;
 using System.Collections.Generic;
 
 namespace NewspaaperCoreGrapgQL.Business.Concrete.Manager
@@ -13,34 +14,34 @@ namespace NewspaaperCoreGrapgQL.Business.Concrete.Manager
             _tagDal = tagDal;
         }
 
-        public Tag Add(Tag tag)
+        public Tag AddTag(Tag tag)
         {
             _tagDal.Add(tag);
             return tag;
         }
 
-        public void Delete(Tag tag)
+        public void DeleteTag(Tag tag)
         {
             _tagDal.Delete(tag);
         }
 
-        public List<Tag> GetAll()
+        public List<Tag> GetAllTags()
         {
             return _tagDal.GetList();
         }
 
-        public Tag GetById(int id)
+        public Tag GetTagById(int id)
         {
             return _tagDal.Get(c => c.TagId == id);
         }
 
-        public Tag Update(Tag tag)
+        public Tag UpdateTag(Tag tag)
         {
             _tagDal.Update(tag);
             return tag;
         }
 
-        public List<Tag> PostTagListForPost(int postID)
+        public List<PostTagDto> PostTagListForPost(int postID)
         {
             return _tagDal.GetPostTags(postID);
         }

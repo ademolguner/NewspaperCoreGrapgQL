@@ -30,8 +30,8 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI.Controllers
             { 
                 Schema = _schema,
                 Query = query.Query,
-                Inputs = query.Variables?.ToInputs(),//TODO: Jsondaki variable kısmının tanımlanması için
-                FieldNameConverter = new PascalCaseFieldNameConverter() //TODO: Graphql sorgularının pascal case olarak yazılması için gerekli.
+                Inputs = query.Variables?.ToInputs()//Jsondaki variable kısmının tanımlanması için
+                //FieldNameConverter = new PascalCaseFieldNameConverter() //Graphql sorgularının pascal case olarak yazılması için gerekli.
             };
 
             var result = await _documentExecuter.ExecuteAsync(executionOptions).ConfigureAwait(false);

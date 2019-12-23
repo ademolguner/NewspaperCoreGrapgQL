@@ -15,7 +15,7 @@ namespace NewspaaperCoreGrapgQL.Business.GraphModels.Mutations
                      new QueryArgument<NonNullGraphType<PostInputType>>
                      {
                          Name = "post",
-                         Description = "Acıklama yazılabilir"
+                         Description = "Bu bir post insert işlemidir. (Açıklama alanı)"
                      }),
                 resolve: context =>
                                     {

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using NewspaaperCoreGrapgQL.Entities.Models;
+using NewspaperCoreGrapgQL.Entities.ComplexTypes;
 using System.IO;
 
 namespace NewspaaperCoreGrapgQL.DataAccess.Concrete
@@ -26,6 +27,6 @@ namespace NewspaaperCoreGrapgQL.DataAccess.Concrete
         public DbSet<Comment> Comment { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Tag> Tag { get; set; }
-        public DbSet<PostTag> PostTag { get; set; }
+        public DbSet<PostTag> PostTag { get; set; } 
     }
 }

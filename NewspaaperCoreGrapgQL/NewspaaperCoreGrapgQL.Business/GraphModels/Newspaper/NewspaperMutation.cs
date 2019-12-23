@@ -15,13 +15,14 @@ namespace NewspaperCoreGrapgQL.Business.GraphModels.Newspaper
 
         public NewspaperMutation(IPostService postRepository,ICategoryService categoryService)
         {
+            Name = "Newspaper_Mutation";
             Field<PostType>(
                 "addPost",
                 arguments: new QueryArguments(
                      new QueryArgument<NonNullGraphType<PostInputType>>
                      {
                          Name = "post",
-                         Description = "Acıklama yazılabilir"
+                         Description = "Bu bir post insert işlemidir (Acıklama yazılabilir)"
                      }),
                 resolve: context =>
                 {
