@@ -45,33 +45,24 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            //ninject ile
+            
             services.AddTransient<IPostService, PostManager>();
             services.AddTransient<IPostDal, EfPostDal>();
-
             services.AddTransient<ICategoryService, CategoryManager>();
             services.AddTransient<ICategoryDal, EfCategoryDal>();
-
             services.AddTransient<ITagService, TagManager>();
             services.AddTransient<ITagDal, EfTagDal>();
-
             services.AddTransient<ICommentService, CommentManager>();
             services.AddTransient<ICommentDal, EfCommentDal>();
-
             services.AddTransient<IPostTagService, PostTagManager>();
             services.AddTransient<IPostTagDal, EfPostTagDal>();
-
-
             services.AddDbContext<NewspaperContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:NewspaperDb"]));
+            
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
-
             services.AddSingleton<NewspaperQuery>();
             services.AddSingleton<NewspaperMutation>();
             services.AddSingleton<PostQuery>();
-            //services.AddSingleton<PostMutation>();
             services.AddSingleton<CategoryQuery>();
-            //services.AddSingleton<CategoryMutation>();
-
             services.AddSingleton<PostType>();
             services.AddSingleton<PostInputType>();
             services.AddSingleton<CategoryInputType>();
@@ -80,9 +71,6 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
             services.AddSingleton<PostTagType>();
             services.AddSingleton<TagType>();
 
-
-            //var sp = services.BuildServiceProvider();
-            //services.AddSingleton<ISchema>(new NewspaperGraphQLSchema(new FuncDependencyResolver(type => sp.GetService(type))));
             services.AddSingleton<IDependencyResolver>(_ => new FuncDependencyResolver(_.GetRequiredService));
             services.AddSingleton<ISchema, NewspaperGraphQLSchema>();
 
