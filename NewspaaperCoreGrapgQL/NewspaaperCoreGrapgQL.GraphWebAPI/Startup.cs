@@ -52,7 +52,6 @@ namespace NewspaaperCoreGrapgQL.GraphWebAPI
             services.AddDbContext<NewspaperContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:NewspaperDb"]));
             
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
-
             services.AddSingleton<NewspaperQuery>();
             services.AddSingleton<NewspaperMutation>();
             services.AddSingleton<PostQuery>();
